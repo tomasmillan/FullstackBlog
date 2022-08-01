@@ -35,7 +35,7 @@ body{
     left: 0;
     top: 0;
     padding: 1vw 5vw;
-    background-color: rgba(240, 248, 255, 0.45);
+    background-color: rgba(38, 82, 120, 0.975);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -62,7 +62,7 @@ body{
 }
 /* HEADER */
 .header{
-    margin-top: 60px;
+    margin-top: 54.5px;
     width: 100%;
     height: calc(100vh - 60px);
     background-image: url("../img/1.jpg");
