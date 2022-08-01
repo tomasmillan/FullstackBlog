@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog : editor</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,100;1,300&display=swap" rel="stylesheet">
+    <!-- Fontawesome Icons -->
+    <script src="https://kit.fontawesome.com/e1cd5ca43b.js" crossorigin="anonymous"></script>
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/editor.css">
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="menu">
+            <ul class="menu__links">
+                <li class="menu__items"><a href="/" class="link"> <i class="fa-solid fa-arrow-left"></i>Volver</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="banner">
+        <input type="file" accept="image/*" id="banner__upload" hidden>
+        <label for="banner__upload" class="banner__upload__btn"><img src="img/upload.png" alt="Carga la imagen de portada"></label>
+    </div>
+    <div class="blog">
+        <textarea type="text" class="title" placeholder="Titulo del blog..."></textarea>
+        <textarea type="text" class="article" placeholder="Comienze a escribir..."></textarea>
+    </div>
+    <div class="blog__options">
+        <button class="btn blog__btn__publish">Publicar</button>
+        <input type="file" accept="image/*" id="image__upload" hidden>
+        <label for="image__upload" class="btn blog__btn__upload">Subir imagen</label>
+    </div>
+
+    
+    <!-- Javascript -->
+    <script src="https://www.gstatic.com/firebasejs/9.9.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.9.1/firebase-firestore.js"></script>
+    <script type="module" src="js/firebase.js"></script>
+    <script type="module" src="js/editor.js"></script>
+</body>
+</html>

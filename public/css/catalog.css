@@ -1,0 +1,87 @@
+.catalog{
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    margin-top: 3rem;
+}
+.aside__menu{
+    flex: 20%;
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    position: relative;
+    left: 0;
+    padding: 2rem 1rem ;
+    flex-flow: column;
+    justify-content: flex-start;
+    margin: 1rem;
+}
+.search__bar{
+    width: 96%;
+    height: 2rem;
+    border: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.644);
+    background: transparent;
+    margin-bottom: 1rem;
+}
+.search__bar [placeholder]{
+    padding: 0 0 0 9px;
+    font-size: 1.5rem;
+}
+.list{
+    list-style: none;
+}
+.category__items{
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-top: 5px;
+    text-align: start;
+}
+.main__catalog{
+    flex-basis: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+.catalog__navbar{
+    display: inline-flex;
+    width: 100%;
+    margin: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+.catalog__title{
+    text-transform: capitalize;
+    margin: 0 1rem;
+}
+.catalog__navbar i{
+    font-size: 20px;
+}
+.card__catalog{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 1rem 2rem;
+    width: 150px;
+    align-items: center;
+    z-index: 20;
+}
+.card__img{
+    width: 150px;
+    height: 150px;
+    border-radius: 400px;
+    cursor: pointer;
+}
+.card__description{
+    visibility: hidden;
+    transform: scale(0.1);
+    position: absolute;
+    transition: 0.5s all;
+}
+.open__popup{
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+    top: 50%;
+}
