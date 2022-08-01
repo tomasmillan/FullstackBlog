@@ -1,14 +1,10 @@
 let popup = document.getElementById("popup");
-let close = document.getElementById("close");
+let close = document.querySelectorAll("close");
 let left = document.getElementById("left");
 let right = document.getElementById("right");
 let title = document.getElementsByClassName("catalog__title");
 
 const continents = [];
-
-popup.addEventListener("click", () => {
-  console.log("click");
-});
 
 left.addEventListener("click", () => {
   console.log("click left");
@@ -18,6 +14,10 @@ right.addEventListener("click", () => {
   console.log("click right");
 });
 
-function openPopup() {}
+function openPopup() {
+  popup.classList.add("open__popup");
+}
 
-function closePopup() {}
+function closePopup() {
+  popup.classList.remove("open__popup");
+}

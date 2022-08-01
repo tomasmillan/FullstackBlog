@@ -39,10 +39,10 @@
 }
 .main__catalog{
     flex-basis: 80%;
-    height: 100%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    border: 2px solid red;
     padding: 2rem;
 }
 .catalog__navbar{
@@ -61,7 +61,7 @@
 }
 .card__catalog{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     margin: 1rem 2rem;
     width: 150px;
@@ -69,19 +69,15 @@
     z-index: 20;
 }
 .card__img{
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     border-radius: 400px;
     cursor: pointer;
 }
 .card__description{
-    visibility: hidden;
-    transform: scale(0.1);
-    position: absolute;
-    transition: 0.5s all;
-}
-.open__popup{
-    visibility: visible;
-    transform: translate(-50%, -50%) scale(1);
-    top: 50%;
+   text-align: center;
+   display: flex;
+   flex-flow: column;
+   align-items: center;
+   justify-content: center;
 }

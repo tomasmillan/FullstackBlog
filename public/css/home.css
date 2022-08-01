@@ -224,6 +224,7 @@ body{
     height: 24vw;
     background: #344;
     display: flex;
+    margin-top: 1rem;
 }
 .container{
     width: 100%;
