@@ -14,10 +14,11 @@
     <script src="https://kit.fontawesome.com/e1cd5ca43b.js" crossorigin="anonymous"></script>
     <!-- Animate CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Js Libraries -->
+    <link rel="stylesheet" href="https://cdn.metroui.org.ua/v4.3.2/css/metro-all.min.css">
     <!-- CSS -->
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/catalog.css">
-
 </head>
 <body>
     <!-- NAVBAR -->
@@ -38,10 +39,14 @@
 
     <!-- Catalog -->
 
-    <section class="catalog">
-        <div class="aside__menu">
-            <input type="search" name="search" id="searchBar" class="search__bar" placeholder="Buscar...">
-            <div class="categories">
+<section class="catalog bg-light">
+    <div class="aside__menu">
+
+<!--  
+     No hace falta por ahora   
+     <input type="search" name="search" id="searchBar" class="search__bar" placeholder="Buscar...">
+-->     
+       <div class="categories">
                 <ul class="list">
                     <li class="category__items">Afrika</li>
                     <li class="category__items">Oceania</li>
@@ -50,79 +55,27 @@
                     <li class="category__items">europa</li>
                 </ul>
             </div>
-        </div>
-        <div class="main__catalog">
+    </div>
+    <div class="main__catalog">
             <div class="catalog__navbar">
                 <i class="fa-solid fa-angle-left" id="left"></i>
                 <h1 class="catalog__title">Title</h1>
                 <i class="fa-solid fa-angle-right" id="right"></i>
             </div>
-            <div class="card__catalog">
-                <img src="img/1.jpg" class="card__img" id="popup">
-                <div class="card__description">
-                    <i class="fa-solid fa-xmark" id="close"></i>
-                    <h2 class="card__title">Nombre</h2>
-                    <p class="card__info">Lorem ipsum dolor sit amet.</p>
-                </div>
-            </div>
-            <div class="card__catalog">
-                <img src="img/2.jpg" class="card__img" id="popup">
-                <div class="card__description">
-                    <i class="fa-solid fa-xmark" id="close"></i>
-                    <h2 class="card__title">Nombre</h2>
-                    <p class="card__info">Lorem ipsum dolor sit amet.</p>
-                </div>
-            </div>
-            <div class="card__catalog">
-                <img src="img/3.jpg" class="card__img" id="popup">
-                <div class="card__description">
-                    <i class="fa-solid fa-xmark" id="close"></i>
-                    <h2 class="card__title">Nombre</h2>
-                    <p class="card__info">Lorem ipsum dolor sit amet.</p>
-                </div>
-            </div>
-            <div class="card__catalog">
-                <img src="img/4.jpg" class="card__img" id="popup">
-                <div class="card__description">
-                    <i class="fa-solid fa-xmark" id="close"></i>
-                    <h2 class="card__title">Nombre</h2>
-                    <p class="card__info">Lorem ipsum dolor sit amet.</p>
-                </div>
-            </div>
-            <div class="card__catalog">
-                <img src="img/5.jpg" class="card__img" id="popup">
-                <div class="card__description">
-                    <i class="fa-solid fa-xmark" id="close"></i>
-                    <h2 class="card__title">Nombre</h2>
-                    <p class="card__info">Lorem ipsum dolor sit amet.</p>
-                </div>
-            </div>
-            <div class="card__catalog">
-                <img src="img/6.jpg" class="card__img" id="popup">
-                <div class="card__description">
-                    <i class="fa-solid fa-xmark" id="close"></i>
-                    <h2 class="card__title">Nombre</h2>
-                    <p class="card__info">Lorem ipsum dolor sit amet.</p>
-                </div>
-            </div>
-            <div class="card__catalog">
-                <img src="img/7.jpg" class="card__img" id="popup">
-                <div class="card__description">
-                    <i class="fa-solid fa-xmark" id="close"></i>
-                    <h2 class="card__title">Nombre</h2>
-                    <p class="card__info">Lorem ipsum dolor sit amet.</p>
-                </div>
-            </div>
-            <div class="card__catalog">
-                <img src="img/8.jpg" class="card__img" id="popup">
-                <div class="card__description">
-                    <i class="fa-solid fa-xmark" id="close"></i>
-                    <h2 class="card__title">Nombre</h2>
-                    <p class="card__info">Lorem ipsum dolor sit amet.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+        <div class="cards__container">
+<!--             <div class="social-box bg-grayWhite fg-grayBlue-dark d-flex flex-column m-10 border-radius-4 drop-shadow" style="width: 15rem;">
+             <div class="card-header d-flex flex-justify-center flex-align-center">
+                <img src="img/1.jpg" class="card__img">   
+             </div>
+             <div class="card-content d-flex flex-justify-center flex-align-center">
+                <h4 class="card-title text-bold text-cap">tomi</h4>
+             </div>
+             <div class="card-footer d-flex flex-justify-center flex-align-center">
+                <p class="text-cap text-medium text-center">Este es una breve descripcion de lo que seria este item</p>
+             </div>
+            </div> -->
+    </div>
+</section>
     
     <!-- Footer -->
     <footer class="footer">
@@ -153,7 +106,8 @@
         <h6 class="author">TML ~ Creative Development ~ 2022</h6>
     </div>
     </footer>
-<!-- Javascript -->
+ <!-- Javascript -->
+ <script src="https://cdn.metroui.org.ua/v4.3.2/js/metro.min.js"></script>
     <script type="module" src="js/catalog.js"></script>
 </body>
 </html>

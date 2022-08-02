@@ -39,8 +39,8 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 9;
-    box-shadow: 60px -16px teal;
+    z-index: 999;
+    box-shadow: 2px 8px 8px rgba(208, 240, 240, 0.449);
 }
 .menu{
     display: flex;

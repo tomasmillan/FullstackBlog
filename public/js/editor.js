@@ -1,5 +1,3 @@
-let db = firebase.firestore();
-
 const blogTitleField = document.querySelector(".title");
 const articleField = document.querySelector(".article");
 
