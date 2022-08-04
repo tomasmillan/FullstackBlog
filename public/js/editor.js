@@ -1,5 +1,12 @@
+import db from "../js/firebase" assert { type: "json" };
+import {
+  setDoc,
+  doc,
+} from "https://www.gstatic.com/firebasejs/9.9.1/firebase-firestore.js";
+
 const blogTitleField = document.querySelector(".title");
 const articleField = document.querySelector(".article");
+console.log(db);
 
 //banner
 const bannerImage = document.querySelector("#banner__upload");
@@ -64,7 +71,7 @@ const addImage = (imagePath, alt) => {
     articleField.value.slice(curPos);
 };
 
-publishBtn.addEventListener("click", () => {
+publishBtn.addEventListener("click", async () => {
   //generating id
   let letters = "abcdefghijklmnñopqrstuvwxyz";
   let blogTitle = blogTitleField.value.split(" ").join("-");
@@ -75,19 +82,21 @@ publishBtn.addEventListener("click", () => {
     //docname
     let docName = `${blogTitle}-${id}`;
     let date = new Date();
+    console.log("post");
 
     //Databse Connection
-    db.collection("blogs")
-      .doc(docName)
-      .set({
-        title: blogTitleField.value,
-        article: articleField.value,
-        bannerImage: bannerPath,
-        publishedAt: `${date.getDate()} ${
-          months[date.getMonth()]
-        } ${date.getFullYeAR()}`,
-      })
+    //await setDoc(doc(db, "cities", "new-city-id"), data);
+    //db.collection("cities").doc("new-city-id").set(data);
+    await setDoc(doc(db, "blogs", docName), {
+      title: blogTitleField.value,
+      article: articleField.value,
+      bannerImage: bannerPath,
+      publishedAt: `${date.getDate()} ${
+        month[date.getMonth()]
+      } ${date.getFullYeAR()}`,
+    })
       .then(() => {
+        console.log("data entered");
         location.href = `${docName}`;
       })
       .catch((err) => {

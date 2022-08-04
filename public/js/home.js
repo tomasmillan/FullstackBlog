@@ -1,4 +1,5 @@
-let db = firebase.firestore();
+import { db } from "./firebase";
+
 const blogSection = document.querySelector(".blogs-section");
 const readMore = document.querySelector(".btn__hero");
 

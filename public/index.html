@@ -15,7 +15,12 @@
     <!-- Animate CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <!-- CSS -->
-    <link rel="stylesheet" href="public/css/home.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <!-- Database -->
+    <script src="https://www.gstatic.com/firebasejs/9.9.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.9.1/firebase-firestore.js"></script>
+    <script src="js/firebase.js"></script> 
+
 
 </head>
 <body>
@@ -27,10 +32,10 @@
         <div class="menu">
             <ul class="menu__links">
                 <li class="menu__items"><a href="/index.html" class="link">inicio</a></li>
-                <li class="menu__items"><a href="public/blog.html" class="link">blog</a></li>
-                <li class="menu__items"><a href="public/catalog.html" class="link">catalogo</a></li>
-                <li class="menu__items"><a href="public/contact.html" class="link">contacto</a></li>
-                <li class="menu__items"><a href="public/editor.html" class="link"><i class="fa-solid fa-pen-to-square"></i></a></li>
+                <li class="menu__items"><a href="/blog.html" class="link">blog</a></li>
+                <li class="menu__items"><a href="/catalog.html" class="link">catalogo</a></li>
+                <li class="menu__items"><a href="/contact.html" class="link">contacto</a></li>
+                <li class="menu__items"><a href="/editor.html" class="link"><i class="fa-solid fa-pen-to-square"></i></a></li>
             </ul>
         </div>
     </nav>
@@ -51,7 +56,7 @@
             <a href="/contact" class="btn contact__btn">Contactate</a>
         </div>
         <div class="contact__aside">
-            <img src="public/img/8.jpg" alt="" class="contact__img">
+            <img src="/img/8.jpg" alt="" class="contact__img">
         </div>
     </section>
 
@@ -59,40 +64,40 @@
         <div class="animals__container">
             <!-- 5 animales de prueba -->
             <label for="afrika">Afrika</label>
-            <button class="chips"><img src="public/img/7.jpg" alt="" class="animal__img" id="afrika"></button>
+            <button class="chips"><img src="/img/7.jpg" alt="" class="animal__img" id="afrika"></button>
             <label for="america">America</label>
-            <button class="chips"><img src="public/img/6.jpg" alt="" class="animal__img" id="america"></button>
+            <button class="chips"><img src="/img/6.jpg" alt="" class="animal__img" id="america"></button>
             <label for="asia">Asia</label>
-            <button class="chips"><img src="public/img/8.jpg" alt="" class="animal__img" id="asia"></button>
+            <button class="chips"><img src="/img/8.jpg" alt="" class="animal__img" id="asia"></button>
             <label for="europa">Europa</label>
-            <button class="chips"><img src="public/img/5.jpg" alt="" class="animal__img" id="europa"></button>
+            <button class="chips"><img src="/img/5.jpg" alt="" class="animal__img" id="europa"></button>
             <label for="oceania">Oceania</label>
-            <button class="chips"><img src="public/img/4.jpg" alt="" class="animal__img" id="oceania"></button>
+            <button class="chips"><img src="/img/4.jpg" alt="" class="animal__img" id="oceania"></button>
         </div>
     </section>
     <!-- Blog Section -->
     <section class="blog__section">
         <!-- Sacar todas las tarjetas y dejar una sola comentada esto es para despues de la maqueta -->
          <div class="blog__card">
-            <img src="public/img/2.jpg" alt="Portada del post" class="blog__img">
+            <img src="/img/2.jpg" alt="Portada del post" class="blog__img">
             <h1 class="blog__title">Post 1</h1>
             <p class="blog__overview">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem dolore eos ipsa beatae rerum est inventore cumque amet unde itaque iure reprehenderit blanditiis atque, aspernatur quibusdam corrupti quos perferendis ab ex nostrum, veniam labore temporibus. Blanditiis minus, pariatur nihil magni incidunt, quaerat esse repudiandae, quia consequuntur tempora amet. Temporibus, nesciunt.</p>
             <a href="/" class="btn btn__blog">saber mas</a>
         </div> 
          <div class="blog__card">
-            <img src="public/img/3.jpg" alt="Portada del post" class="blog__img">
+            <img src="/img/3.jpg" alt="Portada del post" class="blog__img">
             <h1 class="blog__title">Post 2</h1>
             <p class="blog__overview">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem dolore eos ipsa beatae rerum est inventore cumque amet unde itaque iure reprehenderit blanditiis atque, aspernatur quibusdam corrupti quos perferendis ab ex nostrum, veniam labore temporibus. Blanditiis minus, pariatur nihil magni incidunt, quaerat esse repudiandae, quia consequuntur tempora amet. Temporibus, nesciunt.</p>
             <a href="/" class="btn btn__blog">saber mas</a>
         </div> 
          <div class="blog__card">
-            <img src="public/img/4.jpg" alt="Portada del post" class="blog__img">
+            <img src="/img/4.jpg" alt="Portada del post" class="blog__img">
             <h1 class="blog__title">Post 3</h1>
             <p class="blog__overview">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem dolore eos ipsa beatae rerum est inventore cumque amet unde itaque iure reprehenderit blanditiis atque, aspernatur quibusdam corrupti quos perferendis ab ex nostrum, veniam labore temporibus. Blanditiis minus, pariatur nihil magni incidunt, quaerat esse repudiandae, quia consequuntur tempora amet. Temporibus, nesciunt.</p>
             <a href="/" class="btn btn__blog">saber mas</a>
         </div> 
          <div class="blog__card">
-            <img src="public/img/5.jpg" alt="Portada del post" class="blog__img">
+            <img src="/img/5.jpg" alt="Portada del post" class="blog__img">
             <h1 class="blog__title">Post 4</h1>
             <p class="blog__overview">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem dolore eos ipsa beatae rerum est inventore cumque amet unde itaque iure reprehenderit blanditiis atque, aspernatur quibusdam corrupti quos perferendis ab ex nostrum, veniam labore temporibus. Blanditiis minus, pariatur nihil magni incidunt, quaerat esse repudiandae, quia consequuntur tempora amet. Temporibus, nesciunt.</p>
             <a href="/" class="btn btn__blog">saber mas</a>
@@ -128,10 +133,7 @@
     </div>
     </footer>
     <!-- Javascript -->
-    <script src="https://www.gstatic.com/firebasejs/9.9.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.9.1/firebase-firestore.js"></script>
-    <script src="js/firebase.js"></script> 
     <script type="module" src="js/home.js"></script>
-    <script type="module" src="js/firebase.js"></script>
+
 </body>
 </html>
