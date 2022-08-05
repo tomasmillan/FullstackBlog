@@ -34,6 +34,11 @@
                 <li class="menu__items"><a href="./contact.html" class="link">contacto</a></li>
                 <li class="menu__items"><a href="./editor.html" class="link"><i class="fa-solid fa-pen-to-square"></i></a></li>
             </ul>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
         </div>
     </nav>
 
@@ -41,26 +46,23 @@
 
 <section class="catalog bg-light">
     <div class="aside__menu">
-
 <!--  
      No hace falta por ahora   
      <input type="search" name="search" id="searchBar" class="search__bar" placeholder="Buscar...">
 -->     
        <div class="categories">
                 <ul class="list">
-                    <button class="filter__btn"><li class="category__items">Afrika</li></button>
-                    <button class="filter__btn"><li class="category__items">Oceania</li></button>
-                    <button class="filter__btn"><li class="category__items">america</li></button>
-                    <button class="filter__btn"><li class="category__items">Asia</li></button>
-                    <button class="filter__btn"><li class="category__items">europa</li></button>
+                    <li class="category__items"><button class="filter__btn" data-value="africa">Africa</button></li>
+                    <li class="category__items"><button class="filter__btn" data-value="oceania">Oceania</button></li>
+                    <li class="category__items"><button class="filter__btn" data-value="america">America</button></li>
+                    <li class="category__items"><button class="filter__btn" data-value="asia">Asia</button></li>
+                    <li class="category__items"><button class="filter__btn" data-value="europa">Europa</button></li>
                 </ul>
             </div>
     </div>
     <div class="main__catalog">
             <div class="catalog__navbar">
-                <i class="fa-solid fa-angle-left" id="left"></i>
-                <h1 class="catalog__title">Title</h1>
-                <i class="fa-solid fa-angle-right" id="right"></i>
+                <h1 class="catalog__title" id="catalog__title">Title</h1>
             </div>
         <div class="cards__container">
 <!--             <div class="social-box bg-grayWhite fg-grayBlue-dark d-flex flex-column m-10 border-radius-4 drop-shadow" style="width: 15rem;">

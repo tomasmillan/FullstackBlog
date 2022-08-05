@@ -1,12 +1,12 @@
-import db from "../js/firebase" assert { type: "json" };
 import {
-  setDoc,
+  addDoc,
   doc,
+  collection,
 } from "https://www.gstatic.com/firebasejs/9.9.1/firebase-firestore.js";
+import db from "../js/firebase" assert { type: "json" };
 
 const blogTitleField = document.querySelector(".title");
 const articleField = document.querySelector(".article");
-console.log(db);
 
 //banner
 const bannerImage = document.querySelector("#banner__upload");
@@ -72,21 +72,17 @@ const addImage = (imagePath, alt) => {
 };
 
 publishBtn.addEventListener("click", async () => {
-  //generating id
   let letters = "abcdefghijklmnñopqrstuvwxyz";
   let blogTitle = blogTitleField.value.split(" ").join("-");
   let id = "";
+
   for (let i = 0; i < 4; i++) {
     id += letters[Math.floor(Math.random() * letters.length)];
 
-    //docname
     let docName = `${blogTitle}-${id}`;
     let date = new Date();
     console.log("post");
 
-    //Databse Connection
-    //await setDoc(doc(db, "cities", "new-city-id"), data);
-    //db.collection("cities").doc("new-city-id").set(data);
     await setDoc(doc(db, "blogs", docName), {
       title: blogTitleField.value,
       article: articleField.value,
@@ -104,3 +100,54 @@ publishBtn.addEventListener("click", async () => {
       });
   }
 });
+/* const postCollectionRef = collection(db, "blogs");
+const createPost = async () => {
+  await addDoc(postCollectionRef, {
+    title: blogTitleField.value,
+    article: articleField.value,
+    bannerImage: bannerPath,
+    publishedAt: `${date.getDate()} ${
+      month[date.getMonth()]
+    } ${date.getFullYeAR()}`,
+  })
+    .then(() => {
+      console.log("data entered");
+      location.href = `${docName}`;
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+}; */
+/* publishBtn.addEventListener("click", async () => {
+  /*  //generating id
+  let letters = "abcdefghijklmnñopqrstuvwxyz";
+  let blogTitle = blogTitleField.value.split(" ").join("-");
+  let id = "";
+  for (let i = 0; i < 4; i++) {
+    id += letters[Math.floor(Math.random() * letters.length)];
+
+    //docname
+    let docName = `${blogTitle}-${id}`;
+    let date = new Date();
+    console.log(docName);
+ 
+  //Databse Connection
+  //await setDoc(doc(db, "cities", "new-city-id"), data);
+  //db.collection("cities").doc("new-city-id").set(data);
+  await addDoc(postCollectionRef, {
+    title: blogTitleField.value,
+    article: articleField.value,
+    bannerImage: bannerPath,
+    publishedAt: `${date.getDate()} ${
+      month[date.getMonth()]
+    } ${date.getFullYeAR()}`,
+  })
+    .then(() => {
+      console.log("data entered");
+      location.href = `${docName}`;
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+});
+ */

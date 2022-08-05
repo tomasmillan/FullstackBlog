@@ -66,7 +66,7 @@ body{
     width: 100%;
     height: calc(100vh - 60px);
     background-image: url("../img/1.jpg");
-    background-size: cover;
+    background-size: cover  ;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -136,15 +136,18 @@ body{
 /* Contact */
 .contact{
     width: 100%;
-    height: 30vw; 
     display: flex;
-}
+/*     background-image: url('../img/bg-1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+ */}
 .contact__main{
     flex-basis: 70%;
     display: flex;
     justify-content: space-evenly;
     flex-flow: column;
     padding: 0 6vw;
+    text-align: center;
 }
 .contact__aside{
     flex-basis: 30%;
@@ -159,6 +162,7 @@ body{
     height: 20vw;
     object-fit: cover;
     border-radius: 20px;
+    z-index: 2;
 }
 .contact__main .contact__title{
    align-items: flex-start;
@@ -173,25 +177,32 @@ body{
 }
 .contact__btn{
     text-decoration: none;
-    padding: 8px 10px;
+    padding: 8px;
     border-radius: 8px;
     cursor: pointer;
     border: rgba(68, 68, 68, 0.299);
     background: rgb(181, 150, 63);
     color: #1b1b1b;
+    margin: 0 14rem;
     text-transform: capitalize;
-    width: 25%;
     text-align: center;
-    margin-left: 35%;
+    transition: 0.4s all;
+}
+.contact__btn:hover{
+    margin: 0 13rem;
+    background: #46454b;
+    color: white;
 }
 /* Chips */
 .animals{
     width: 100%;
-    height: 15vw;
     display: flex;
     justify-content: center;
     align-items: center;
     background: rgba(80, 114, 114, 0.146);
+    background-image: url('../img/pexels-chennawit-yulue-540006.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .animals__container{
     width: 90%;
@@ -211,17 +222,33 @@ body{
     height: 12.5vw;
     border-radius: 15vw;
     padding: 1rem;
-
+}
+.chips__container{
+    display: flex;
+    text-align: center;
+    flex-direction: column-reverse;
 }
 .animals__container label{
     display: flex;
-    flex-direction: column-reverse;
     text-align: center;
+    border-radius: 10px;
+    background-color: rgba(157, 157, 157, 0.6);
+    border: 1px solid gainsboro;
+    padding: 0.3rem;
+    font-size: 25px;
+    justify-content: center;
+    font-weight: 600;
+    transition: 0.4s all;
+}
+.animals__container label:hover{
+    background-color: rgba(179, 106, 10, 0.6);
+    color: aliceblue;
+
+
 }
 /* Footer */
 .footer{
     width: 100%;
-    height: 24vw;
     background: #344;
     display: flex;
     margin-top: 1rem;
@@ -311,4 +338,165 @@ body{
     align-items: center;
     letter-spacing: 1.8px;
 }
-
+/* Hamburger Menu */
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+/* Responsive */
+@media(max-width:1200px){
+    .contact{
+        flex-direction: column-reverse;
+        padding: 2rem 0.5rem;
+        height: 100vw;
+        text-align: center;
+        align-items: center;
+    }
+    .contact__title{
+        margin-bottom: 10px;
+    }
+    .contact__main{
+        width: 100%;
+        align-items: center;
+    }
+    .contact__main .contact__text{
+        line-height: 1.3rem;
+        letter-spacing: 2px;
+        text-align: center;
+        margin: 0;
+    }
+    .contact__btn{
+        margin-top: 1rem;
+    }
+    .contact__img{
+        border-radius: 10px;
+        width: 220px;
+        height: 100%;
+    }
+    .contact__aside{
+        padding: 2rem 0;
+    }
+}
+@media(max-width: 840px){
+    .hamburger{
+        display: block;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .menu__links{
+        position: fixed;
+        left: -100%;
+        top: 45px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #352b5c;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        justify-content: space-evenly;
+        transition: 0.3s all
+    }
+    .menu__items{
+        margin: 1rem 0;
+    }
+    .link{
+        color: antiquewhite;
+        font-size: 1rem;
+    }
+    .menu__links.active{
+        left: 0;
+    }
+    .header{
+        margin-top: 40px;
+        width: 100%;
+        height: calc(100vh - 60px);
+        align-items: center;
+        flex-direction: column;
+    }
+    .contact{
+        flex-direction: column-reverse;
+        padding: 2rem 0.5rem;
+        height: 100vw;
+        text-align: center;
+        align-items: center;
+    }
+    .contact__title{
+        margin-bottom: 10px;
+    }
+    .contact__main{
+        width: 100%;
+        align-items: center;
+    }
+    .contact__main .contact__text{
+        line-height: 1.3rem;
+        letter-spacing: 2px;
+        text-align: center;
+        margin: 0;
+    }
+    .contact__btn{
+        margin-top: 1rem;
+    }
+    .contact__img{
+        border-radius: 10px;
+        width: 220px;
+        height: 100%;
+    }
+    .contact__aside{
+        padding: 2rem 0;
+    }
+    .animals__container{
+        flex-direction: column;
+    }
+    .animal__img{
+        width: 30vw;
+        height: 30vw;
+    }
+    .animals__container label{
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .blog__section{
+        width: 100%;
+        padding: 50px 5vw;
+        grid-template-columns: auto;
+        text-align: center;
+    }    
+    .footer{
+        flex-direction: column;
+    }
+    .footer{
+        width: 100%;
+        background: #344;
+        display: flex;
+        margin-top: 1rem;
+    }
+    .container{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 3vw;
+    }
+    .credits{
+        margin-top: 1rem;
+        padding: 1rem;
+    }
+}
