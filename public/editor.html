@@ -15,11 +15,7 @@
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/editor.css">
 
-        <script src="https://www.gstatic.com/firebasejs/9.9.1/firebase-app-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.9.1/firebase-firestore-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.9.1/firebase-auth-compat.js"></script>
-    <script type="module" src="js/firebase.js"></script>
-
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 
 <body>
@@ -34,6 +30,7 @@
     <div class="banner">
         <input type="file" accept="image/*" id="banner__upload" hidden>
         <label for="banner__upload" class="banner__upload__btn"><img src="img/upload.png" alt="Carga la imagen de portada"></label>
+    
     </div>
     <div class="blog">
         <textarea type="text" class="title" placeholder="Titulo del blog..."></textarea>
@@ -47,6 +44,7 @@
 
     
     <!-- Javascript -->
+    <script src="./js/hamburger.js" type="module"></script>
     <script type="module" src="js/editor.js"></script>
 </body>
 </html>

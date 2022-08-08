@@ -1,10 +1,19 @@
-import {
-  addDoc,
-  doc,
-  collection,
-} from "https://www.gstatic.com/firebasejs/9.9.1/firebase-firestore.js";
-import db from "../js/firebase" assert { type: "json" };
+import { collection } from "./firebase.js";
+import { db, addDoc, doc, setDoc } from "./firebase.js";
 
+const month = [
+  "Ene",
+  "Feb",
+  "Mar",
+  "Abr",
+  "May",
+  "Jun",
+  "Jul",
+  "Ago",
+  "Sep",
+  "Nov",
+  "Dic",
+];
 const blogTitleField = document.querySelector(".title");
 const articleField = document.querySelector(".article");
 
@@ -30,8 +39,8 @@ const uploadImage = (uploadFile, uploadType) => {
     const formData = new FormData();
     formData.append("image", file);
 
-    fetch("/upload", {
-      method: "post",
+    fetch("127.0.0.1:3000/uploads", {
+      method: "POST",
       body: formData,
     })
       .then((res) => res.json())
@@ -44,23 +53,9 @@ const uploadImage = (uploadFile, uploadType) => {
         }
       });
   } else {
-    alert("Por favor subir imagen");
+    swal("Por favor subir imagen");
   }
 };
-
-const month = [
-  "Ene",
-  "Feb",
-  "Mar",
-  "Abr",
-  "May",
-  "Jun",
-  "Jul",
-  "Ago",
-  "Sep",
-  "Nov",
-  "Dic",
-];
 
 const addImage = (imagePath, alt) => {
   let curPos = articleField.selectionStart;
@@ -89,7 +84,7 @@ publishBtn.addEventListener("click", async () => {
       bannerImage: bannerPath,
       publishedAt: `${date.getDate()} ${
         month[date.getMonth()]
-      } ${date.getFullYeAR()}`,
+      } ${date.getFullYear()}`,
     })
       .then(() => {
         console.log("data entered");

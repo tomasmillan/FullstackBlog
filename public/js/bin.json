@@ -1,0 +1,155 @@
+{
+    "products": [
+        {
+            "id":0,
+            "place": "america",
+            "name": "name",
+            "description": "Some description"
+        },
+        {
+            "id":1,
+            "place": "america",
+            "name": "name",
+            "description": "Some description"
+        },
+        {
+            "id":2,
+            "place": "america",
+            "name": "name",
+            "description": "Some description"
+        },
+        {
+            "id":3,
+            "place": "america",
+            "name": "name",
+            "description": "Some description"
+        },
+        {
+            "id":4,
+            "place": "america",
+            "name": "name",
+            "description": "Some description"
+        },
+        {
+            "id":5,
+            "place": "oceania",
+            "name": "name",
+            "description": "Some description"
+        },
+        {
+            "id":6,
+            "place": "oceania",
+            "name": "name",
+            "description": "Some description"
+        },
+        {
+            "id":7,
+            "place": "oceania",
+            "name": "name",
+            "description": "Some description"
+        },
+        {
+            "id":8,
+            "place": "oceania",
+            "name": "name",
+            "description": "Some description"
+        },
+        {
+            "id":9,
+            "place": "oceania",
+            "name": "name",
+            "description": "Some description"
+        },
+        {
+            "id":10,
+            "place": "asia",
+            "name": "name",
+            "description": "Some description"
+        },
+        {
+            "id":11,
+            "place": "asia",
+            "name": "name",
+            "description": "Some description"
+        },
+        {
+            "id": 12,
+            "place": "asia",
+            "name": "name",
+            "description": "Some description"
+        },
+        {
+            "id": 13,
+            "place": "asia",
+            "name": "name",
+            "description": "Some description"
+        },
+        {
+            "id": 14,
+            "place": "asia",
+            "name": "name",
+            "description": "Some description"
+        },
+        {
+            "id": 15,
+            "place": "europa",
+            "name": "name",
+            "description": "Some description"
+        },
+        {
+            "id": 16,
+            "place": "europa",
+            "name": "name",
+            "description": "Some description"
+        },
+        {
+            "id": 17,
+            "place": "europa",
+            "name": "name",
+            "description": "Some description"
+        },
+        {
+            "id": 18,
+            "place": "europa",
+            "name": "name",
+            "description": "Some description"
+        },
+        {
+            "id": 19,
+            "place": "europa",
+            "name": "name",
+            "description": "Some description"
+        },
+        {
+            "id": 20,
+            "place": "africa",
+            "name": "name",
+            "description": "Some description"
+        },
+        {
+            "id": 21,
+            "place": "africa",
+            "name": "name",
+            "description": "Some description"
+        },
+        {
+            "id": 22,
+            "place": "africa",
+            "name": "name",
+            "description": "Some description"
+        },
+        {
+            "id": 23,
+            "place": "africa",
+            "name": "name",
+            "description": "Some description"
+        },
+        {
+            "id": 24,
+            "place": "africa",
+            "name": "name",
+            "description": "Some description"
+        }
+        
+    ]
+}

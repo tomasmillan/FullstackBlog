@@ -1,30 +1,47 @@
-import { db } from "./firebase";
+import { collection, getDocs, db } from "./firebase.js";
 
-const blogSection = document.querySelector(".blogs-section");
+const blogSection = document.querySelector(".blog__section");
 const readMore = document.querySelector(".btn__hero");
 
 readMore.addEventListener("click", () => {
   location.href = "/blog";
 });
 
-db.collection("blogs")
-  .get()
-  .then((blogs) => {
-    blogs.forEach((blog) => {
-      if (blog.id != decodeURI(location.pathname.split("/").pop())) {
-        createBlog(blog);
-      }
-    });
-  });
-
-const createBlog = (blog) => {
-  let data = blog.data();
+const createBlog = (id, blog) => {
+  const { title, article, bannerImage } = blog;
+  console.log(title, article, bannerImage);
   blogSection.innerHTML += `
-    <div class="blog-card">
-        <img src="${data.bannerImage}" class="blog-image" alt="">
-        <h1 class="blog-title">${data.title.substring(0, 100) + "..."}</h1>
-        <p class="blog-overview">${data.article.substring(0, 200) + "..."}</p>
-        <a href="/${blog.id}" class="btn dark">read</a>
+    <div class="blog__card">
+        <img src="${blog.bannerImage}" class="blog__img" alt="">
+        <h1 class="blog__title">${
+          String(blog.title).substring(0, 100) + "..."
+        }</h1>
+        <p class="blog__overview">${
+          String(blog.article).substring(0, 200) + "..."
+        }</p>
+        <a href="/${id}" class="btn btn__blog">read</a>
     </div>
     `;
 };
+
+const querySnapshot = await getDocs(collection(db, "blogs"));
+querySnapshot.forEach(async (doc) => {
+  // doc.data() is never undefined for query doc snapshots
+  console.log(doc.id, " => ", doc.data());
+  createBlog(doc.id, await doc.data());
+});
+
+// import { db, collection, getDocs, query } from "./firebase.js";
+
+//
+
+// const q = query(collection(db, "blogs"));
+
+// getDocs(q).then((blogs) => {
+//   blogs.docs.forEach((blog) => {
+//     // if (blog.id === decodeURI(location.pathname.split("/").pop())) {
+//     // console.log(blog);
+//     console.log(blog);
+//     createBlog(blog.data());
+//   });
+// });

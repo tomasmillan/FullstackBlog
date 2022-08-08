@@ -1,5 +1,3 @@
-let db = firebase.firestore();
-
 let blogId = decodeURI(location.pathname.split("/").pop());
 
 let docRef = db.collection("blogs").doc(blogId);
