@@ -38,7 +38,7 @@ textarea::-webkit-scrollbar-thumb{
     background: rgba(0,0,0,0.2);
     border-radius: 10px;
 }
-.title, 
+.blog__title, 
 .article{
     width: 100%;
     min-height: 100px;

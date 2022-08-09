@@ -12,13 +12,13 @@ app.get("/", (req, res) => {
   res.sendFile(path.join(initial_path, "index.html"));
 });
 
-app.get("/editor", (req, res) => {
+app.get("/editor", express.static("uploads"), (req, res) => {
   res.sendFile(path.join(initial_path, "editor.html"));
 });
 
 // upload link
 
-app.post("/upload", express.static("uploads"), (req, res) => {
+app.post("/upload", (req, res) => {
   let file = req.files.image;
   let date = new Date();
   // image name
@@ -31,23 +31,22 @@ app.post("/upload", express.static("uploads"), (req, res) => {
   res.json(path);
 });
 
-app.get("/:blog", (req, res) => {
+app.get("/blogs", (req, res) => {
   res.sendFile(path.join(initial_path, "blog.html"));
 });
-app.get("/:contact", (req, res) => {
-  res.sendFile(path.join(initial_path, "contact.html"));
-});
-app.get("/:catalog", (req, res) => {
-  res.sendFile(path.join(initial_path, "catalog.html"));
+
+app.get("/:id", (req, res) => {
+  res.sendFile(path.join(initial_path, "blogView.html"));
 });
 
-app.use((req, res) => {
-  res.json("404");
+app.get("/contact", (req, res) => {
+  res.sendFile(path.join(initial_path, "contact.html"));
+});
+
+app.get("/catalog", (req, res) => {
+  res.sendFile(path.join(initial_path, "catalog.html"));
 });
 
 app.listen("3000", () => {
   console.log("listening......");
 });
-
-console.log(__dirname);
-console.log(__filename);

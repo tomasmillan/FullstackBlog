@@ -1,7 +1,7 @@
 import { collection } from "./firebase.js";
-import { db, doc, setDoc } from "./firebase.js";
+import { db, doc, setDoc, getDocs } from "./firebase.js";
 
-const blogTitleField = document.querySelector(".title");
+const blogTitleField = document.querySelector(".blog__title");
 const articleField = document.querySelector(".article");
 
 //banner
@@ -32,12 +32,9 @@ const uploadImage = async (uploadFile, uploadType) => {
     })
       .then((res) => res.json())
       .then((data) => {
-        console.log(formdata);
-        console.log(data);
-        addImage(data, file.name);
         bannerPath = `${location.origin}/${data}`;
         console.log(bannerPath);
-        banner.style.backgroundImage = `url("${bannerPath}.jpg")`;
+        banner.style.backgroundImage = `${bannerPath.file}`;
       });
   } else {
     swal("Por favor subir imagen");
@@ -69,35 +66,22 @@ let months = [
 ];
 
 publishBtn.addEventListener("click", () => {
-  if (articleField.value.length && blogTitleField.value.length) {
-    // generating id
-    let letters = "abcdefghijklmnopqrstuvwxyz";
-    let blogTitle = blogTitleField.value.split(" ").join("-");
-    let id = "";
-    for (let i = 0; i < 4; i++) {
-      id += letters[Math.floor(Math.random() * letters.length)];
-    }
-
-    // setting up docName
-    let docName = `${blogTitle}-${id}`;
-    let date = new Date(); // for published at info
-
-    //access firstore with db variable;
-    db.collection("blogs")
-      .doc(docName)
-      .set({
-        title: blogTitleField.value,
-        article: articleField.value,
-        bannerImage: bannerPath,
-        publishedAt: `${date.getDate()} ${
-          months[date.getMonth()]
-        } ${date.getFullYear()}`,
-      })
-      .then(() => {
-        location.href = `/${docName}`;
-      })
-      .catch((err) => {
-        console.error(err);
-      });
+  // generating id and info
+  let letters = "abcdefghijklmnopqrstuvwxyz";
+  let blogTitle = blogTitleField.value.split(" ").join("-");
+  let id = "";
+  for (let i = 0; i < 4; i++) {
+    id += letters[Math.floor(Math.random() * letters.length)];
   }
+  let docName = `${blogTitle}-${id}`;
+  let date = new Date();
+  const saveFiles = {
+    title: blogTitleField.value,
+    article: articleField.value,
+    bannerImage: bannerPath,
+    publishedAt: `${date.getDate()} ${
+      months[date.getMonth()]
+    } ${date.getFullYear()}`,
+  };
+  console.log(saveFiles);
 });

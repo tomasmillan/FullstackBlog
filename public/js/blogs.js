@@ -1,14 +1,9 @@
 import { collection, getDocs, db } from "./firebase.js";
-
-const blogSection = document.querySelector(".blog__section");
 const readMore = document.querySelector(".btn__hero");
-
-readMore.addEventListener("click", () => {
-  location.href = "/blogs";
-});
-
 const createBlog = (id, blog) => {
   const { title, article, bannerImage } = blog;
+
+  const blogSection = document.querySelector(".blog");
   blogSection.innerHTML += `
     <div class="blog__card">
         <img src="${blog.bannerImage}" class="blog__img" alt="">
@@ -27,3 +22,5 @@ querySnapshot.forEach(async (doc) => {
   console.log(doc.id, " => ", doc.data());
   createBlog(doc.id, await doc.data());
 });
+
+export { createBlog };

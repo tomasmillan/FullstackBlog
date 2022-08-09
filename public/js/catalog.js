@@ -18,7 +18,6 @@ const header = {
 };
 
 const apiFetchUrl = root + route;
-console.log(apiFetchUrl);
 async function loadContent() {
   const response = await fetch(apiFetchUrl, header);
   const { record } = await response.json();
@@ -80,9 +79,7 @@ function createCard(items) {
 }
 input.addEventListener("keyup", (e) => {
   const newItems = items.filter((item) =>
-    `${item.title.toLowerCase()} ${item.author.toLowerCase()}`.includes(
-      input.value.toLowerCase()
-    )
+    `${item.name.toLowerCase()}`.includes(input.value.toLowerCase())
   );
   generateCards(newItems);
 });

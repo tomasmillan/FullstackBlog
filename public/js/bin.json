@@ -3,152 +3,177 @@
         {
             "id":0,
             "place": "america",
-            "name": "name",
-            "description": "Some description"
+            "image": "https://viapais.com.ar/resizer/1xFtH2OBpqdZoShkcspMTah9otc=/982x551/smart/cloudfront-us-east-1.images.arcpublishing.com/grupoclarin/FTDHZ635M5G43LR2I2JPU7GQ5Q.jpg",
+            "name": "Venado de las Pampas",
+            "description": "El venado de las Pampas, guazú ti'í o guasutĩ en guaraní, es un cérvido de tamaño mediano, endémico de las llanuras de la región templada de Sudamérica."
         },
         {
             "id":1,
             "place": "america",
-            "name": "name",
-            "description": "Some description"
+            "image": "https://images.pexels.com/photos/7361032/pexels-photo-7361032.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+            "name": "Tapir",
+            "description": "Los tapires son un género de mamíferos perisodáctilos de la familia Tapiridae. Es el único género actual de la familia, que incluye otros nueve géneros extintos."
         },
         {
             "id":2,
             "place": "america",
-            "name": "name",
-            "description": "Some description"
+            "image": "https://images.pexels.com/photos/53001/cougar-mountain-lion-puma-concolor-big-cat-53001.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "name": "Puma",
+            "description": "Está en lo más alto de la cadena alimenticia de la Patagonia, siendo los guanacos su comida principal."
         },
         {
             "id":3,
             "place": "america",
-            "name": "name",
-            "description": "Some description"
+            "image": "https://images.pexels.com/photos/2317904/pexels-photo-2317904.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "name": "Guacamayo",
+            "description": "Los guacamayos son aves del orden Psittaciformes y de la familia Psittacidae, muy llamativas por el colorido de su plumaje. También conocidos como Mery en algunos círculos."
         },
         {
             "id":4,
             "place": "america",
-            "name": "name",
-            "description": "Some description"
+            "image": "https://images.pexels.com/photos/460223/pexels-photo-460223.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "name": "Bisonte",
+            "description": "El bisonte americano, también denominado búfalo, ​ y —palabra en desuso— cíbolo, es una especie de gran mamífero artiodáctilo de la familia de los bóvidos.​"
         },
         {
             "id":5,
             "place": "oceania",
-            "name": "name",
-            "description": "Some description"
+            "image": "https://898904.smushcdn.com/2130394/wp-content/uploads/2018/05/animales-que-solo-veras-en-australia-3.jpg?lossy=1&strip=1&webp=1",
+            "name": "Wombat",
+            "description": "Es un marsupial súper gracioso que puede llegar a pesar 35 kg. Parecen osos gorditos con patitas cortas."
         },
         {
             "id":6,
             "place": "oceania",
-            "name": "name",
-            "description": "Some description"
+            "image": "https://www.nationalgeographic.com.es/medio/2021/02/02/el-ornitorrinco-es-una-de-las-criaturas-mas-raras-del-mundo-aunque-es-un-mamifero-pone-huevos-y-amamanta-a-sus-crias-pero-no-tienen-mamas_63ec063d_1280x917.jpg",
+            "name": "Ornitorrinco",
+            "description": "El ornitorrinco es una especie de mamífero semiacuático endémico del este de Australia y de la isla de Tasmania."
         },
         {
             "id":7,
             "place": "oceania",
-            "name": "name",
-            "description": "Some description"
+            "image": "https://images.pexels.com/photos/2573494/pexels-photo-2573494.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "name": "Canguro",
+            "description": "Los canguros son marsupiales, una clase de mamíferos con una bolsa en la que viven sus crías, denominadas 'joeys'."
         },
         {
             "id":8,
             "place": "oceania",
-            "name": "name",
-            "description": "Some description"
+            "image": "https://images.pexels.com/photos/2610309/pexels-photo-2610309.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "name": "Koala",
+            "description": "El koala es una especie de marsupial diprotodonto de la familia Phascolarctidae, endémico de Australia. Es el único representante existente de la familia Phascolarctidae y sus parientes vivos más cercanos son los wombats."
         },
         {
             "id":9,
             "place": "oceania",
-            "name": "name",
-            "description": "Some description"
+            "image": "https://images.pexels.com/photos/5329782/pexels-photo-5329782.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "name": "Demonio de Tasmania",
+            "description": "En la actualidad solo se encuentra en estado silvestre en la isla de Tasmania, al sur de Australia continental."
         },
         {
             "id":10,
             "place": "asia",
-            "name": "name",
-            "description": "Some description"
+            "image": "https://images.pexels.com/photos/2305706/pexels-photo-2305706.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+            "name": "Panda Rojo",
+            "description": "El panda rojo o panda menor es una especie de mamífero omnívoro de la familia Ailuridae."
         },
         {
             "id":11,
             "place": "asia",
-            "name": "name",
-            "description": "Some description"
+            "image":"https://images.pexels.com/photos/7209368/pexels-photo-7209368.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "name": "Rinoceronte Indio",
+            "description": "El rinoceronte indio es una especie de mamífero perisodáctilo de la familia Rhinocerotidae, una de las tres especies de rinoceronte que existen actualmente en Asia."
         },
         {
             "id": 12,
             "place": "asia",
-            "name": "name",
-            "description": "Some description"
+            "image": "https://images.pexels.com/photos/2411914/pexels-photo-2411914.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "name": "Organgutan",
+            "description": "Los orangutanes son un género de primates homínidos que comprende tres especies de grandes simios originarios de Indonesia y Malasia."
         },
         {
             "id": 13,
             "place": "asia",
-            "name": "name",
-            "description": "Some description"
+            "image": "https://images.pexels.com/photos/51952/cow-bull-horns-coat-51952.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "name": "Yak",
+            "description": "Son mamíferos bóvidos de tamaño mediano y pelaje lanoso, nativo de las montañas de Asia Central y el Himalaya, vive en las altiplanicies esteparias y fríos desiertos del Nepal, Tíbet, Pamir y Karakórum, entre los 4000 y 6000 metros de altitud."
         },
         {
             "id": 14,
             "place": "asia",
-            "name": "name",
-            "description": "Some description"
+            "image": "https://images.pexels.com/photos/7274845/pexels-photo-7274845.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "name": "Tigre de Bengala",
+            "description": "El tigre de Bengala, también conocido como tigre de Bengala real o tigre indio, es una subespecie de tigre que habita en la India, Nepal, Bangladés, Bután, Birmania y Tíbet."
         },
         {
             "id": 15,
             "place": "europa",
-            "name": "name",
-            "description": "Some description"
+            "image": "https://images.pexels.com/photos/12194905/pexels-photo-12194905.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+            "name": "Cabra de Monte",
+            "description": "La cabra montés o íbice ibérico ​ es una de las especies de bóvidos del género Capra que existen en Europa."
         },
         {
             "id": 16,
             "place": "europa",
-            "name": "name",
-            "description": "Some description"
+            "image": "https://images.pexels.com/photos/3964413/pexels-photo-3964413.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+            "name": "Ardilla Roja",
+            "description": "La ardilla roja, o simplemente ardilla común, es una especie de roedor esciuromorfo de la familia Sciuridae. Es una de las ardillas más extendidas por los bosques de Europa."
         },
         {
             "id": 17,
             "place": "europa",
-            "name": "name",
-            "description": "Some description"
+            "image":"https://images.pexels.com/photos/1068554/pexels-photo-1068554.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+            "name": "Oso Pardo",
+            "description": "El oso pardo europeo es una subespecie del oso pardo propia de Europa, desde la península ibérica hasta Escandinavia y Rusia."
         },
         {
             "id": 18,
             "place": "europa",
-            "name": "name",
-            "description": "Some description"
+            "image":"https://images.pexels.com/photos/6474759/pexels-photo-6474759.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+            "name": "Buitre Leonado",
+            "description": "El buitre leonado​, del griego, γύψ, gýps y el latín fulvus. Es una especie de ave accipitriforme de la familia Accipitridae, ​ y uno de los pocos buitres que se pueden encontrar en Europa."
         },
         {
             "id": 19,
             "place": "europa",
-            "name": "name",
-            "description": "Some description"
+            "image": "https://images.pexels.com/photos/6613569/pexels-photo-6613569.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+            "name": "Reno",
+            "description": "El reno común del norte de Europa alcanza una altura en la cruz de 110 cm y un peso de 150 kg."
         },
         {
             "id": 20,
             "place": "africa",
-            "name": "name",
-            "description": "Some description"
+            "image": "https://images.pexels.com/photos/70080/elephant-africa-african-elephant-kenya-70080.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+            "name": "Elefante Gris",
+            "description": "Los elefantes son los animales terrestres más grandes que existen en la actualidad.2​ El periodo de gestación es de veintidós meses, el más largo en cualquier animal terrestre."
         },
         {
             "id": 21,
             "place": "africa",
-            "name": "name",
-            "description": "Some description"
+            "name": "Cebra de la Sabana",
+            "image":"https://images.pexels.com/photos/247376/pexels-photo-247376.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+            "description": "La cebra de sabana, es el tipo más común y extendido de cebra. Es propia de las llanuras y sabanas desde el sur de Etiopía a lo largo del África oriental, y tan al sur como Angola y la parte oriental de Sudáfrica."
         },
         {
             "id": 22,
             "place": "africa",
-            "name": "name",
-            "description": "Some description"
+            "image":"https://images.pexels.com/photos/3857080/pexels-photo-3857080.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+            "name": "Antilope",
+            "description": "Los antílopes son mamíferos ungulados de la familia de los bóvidos, Una característica de esta familia es que solo los machos poseen cuernos, aunque en algunas especies"
         },
         {
             "id": 23,
             "place": "africa",
-            "name": "name",
-            "description": "Some description"
+            "image": "https://images.pexels.com/photos/3889695/pexels-photo-3889695.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+            "name": "Pinguino de Anteojos",
+            "description": "El pingüino de El Cabo, ​ también conocido como pingüino africano o de anteojos, es la única especie de pingüino que vive en el continente africano y una de las cuatro del género Spheniscus."
         },
         {
             "id": 24,
             "place": "africa",
-            "name": "name",
-            "description": "Some description"
+            "image": "https://images.pexels.com/photos/3061500/pexels-photo-3061500.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "name": "Camelus",
+            "description": "Camelus es un género de mamíferos artiodáctilos de la familia Camelidae que incluye a las tres especies vivientes de la familia originarias del Viejo Mundo, que son denominadas popularmente como camellos y dromedarios."
         }
         
     ]
