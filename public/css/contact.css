@@ -1,0 +1,63 @@
+.contact{
+    width: 100%;
+    padding: 3rem;
+    background-image: url('../img/3.jpg');
+    filter: blur(85%);
+    filter: grayscale(85%);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.form__container{
+    display: flex;
+    text-align: center;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 2rem;
+    background: rgb(96, 98, 105);
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 2px 10px 8px rgb(96, 98, 105);
+    z-index: 2;
+}
+.title{
+    margin: 0.5rem;
+}
+label{
+    margin: 0.5rem;
+    font-size: 18px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.form input, #comment{
+    background: transparent;
+    border: transparent;
+    border-bottom: 2px solid black;
+    margin: 5px 0;
+    width: 95%;
+}
+::placeholder {
+    color: rgb(195, 195, 241);
+    padding: 5px;
+    font-size: 1em;
+    text-transform: capitalize;
+  }
+  .btn__submit__contact{
+    font-size: 1rem;
+    color: rgb(195, 195, 241);
+    text-transform: capitalize;
+    margin-top: 1rem;
+    padding-bottom: 8px;
+    transition: 0.4s;
+  }
+  .btn__submit__contact:hover{
+    transform: scaleX(1.1);
+    color: blue;
+  }

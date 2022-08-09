@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <!-- CSS -->
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/contact.css">
+
 
 </head>
 <body>
@@ -40,25 +42,59 @@
         </div>
     </nav>
 
-    <section>
-        contacto
+    <section class="contact">
+        <div class="form__container">
+            <h2 class="title">Contacto</h2>
+            <div id="errorMessage"></div>
+            <form action="#" class="form" id="form">
+                <label for="name">Nombre</label>
+                <input type="text" name="name" id="firstName" placeholder="ingrese su nombre.">
+                <label for="lastname">Apellido</label>
+                <input type="text" name="lastname" id="lastName" placeholder="ingrese su apellido.">
+                <label for="emal">E-mail</label>
+                <input type="email" name="mail" id="mail" placeholder="ingrese su mail">
+                <label for="comment">Mensaje</label>
+                <textarea name="comment" id="comment" cols="30" rows="10" placeholder="escriba aqui su comentario"></textarea>
+                <input type="submit" value="submit" class="btn__submit__contact" id="submit">
+            </form>
+        </div>
     </section>
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="col-2">ho</div>
-            <div class="col-1">la</div>
-            <div class="col-2">ma</div>
+            <div class="col-2">
+                <h2 class="ft-links">
+                    Useful links
+                    <ul>
+                        <li class="ft-items">home</li>
+                        <li class="ft-items">catalogo</li>
+                        <li class="ft-items">blog</li>
+                        <li class="ft-items">contacto</li>
+                    </ul>
+                </h2>
+            </div>
+            <div class="col-1">
+                <form action="#">
+                <input type="email" name="" id="mail" placeholder="mail@gmail.com">
+                <input type="submit" value="submit">
+            </form>
+            </div>
+            <div class="col-2 col-e">
+                <h3>FAQ</h3>
+                <h3>Policies</h3>
+                <h3>Information</h3>
+                <h3>Data</h3>
+            </div>
     </div>
     <div class="credits">
         <h6 class="author">TML ~ Creative Development ~ 2022</h6>
     </div>
     </footer>
     <!-- Javascript -->
-    <script src="https://www.gstatic.com/firebasejs/9.9.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.9.1/firebase-firestore.js"></script>
-    <script src="js/firebase.js"></script> 
+
     <script type="module" src="js/home.js"></script>
-    <script type="module" src="js/firebase.js"></script>
+    <script type="module" src="js/hamburger.js"></script>
+    <script src="./js/contact.js"></script>
+
 </body>
 </html>

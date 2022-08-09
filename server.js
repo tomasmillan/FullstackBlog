@@ -17,7 +17,8 @@ app.get("/editor", (req, res) => {
 });
 
 // upload link
-app.post("/uploads", (req, res) => {
+
+app.post("/upload", express.static("uploads"), (req, res) => {
   let file = req.files.image;
   let date = new Date();
   // image name
@@ -26,14 +27,8 @@ app.post("/uploads", (req, res) => {
   let path = "public/uploads/" + imagename;
 
   // create upload
-  file.mv(path, (err, result) => {
-    if (err) {
-      throw err;
-    } else {
-      // our image upload path
-      res.json(path);
-    }
-  });
+  file.mv(path);
+  res.json(path);
 });
 
 app.get("/:blog", (req, res) => {
@@ -53,3 +48,6 @@ app.use((req, res) => {
 app.listen("3000", () => {
   console.log("listening......");
 });
+
+console.log(__dirname);
+console.log(__filename);

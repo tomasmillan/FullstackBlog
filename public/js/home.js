@@ -9,7 +9,6 @@ readMore.addEventListener("click", () => {
 
 const createBlog = (id, blog) => {
   const { title, article, bannerImage } = blog;
-  console.log(title, article, bannerImage);
   blogSection.innerHTML += `
     <div class="blog__card">
         <img src="${blog.bannerImage}" class="blog__img" alt="">
@@ -30,18 +29,3 @@ querySnapshot.forEach(async (doc) => {
   console.log(doc.id, " => ", doc.data());
   createBlog(doc.id, await doc.data());
 });
-
-// import { db, collection, getDocs, query } from "./firebase.js";
-
-//
-
-// const q = query(collection(db, "blogs"));
-
-// getDocs(q).then((blogs) => {
-//   blogs.docs.forEach((blog) => {
-//     // if (blog.id === decodeURI(location.pathname.split("/").pop())) {
-//     // console.log(blog);
-//     console.log(blog);
-//     createBlog(blog.data());
-//   });
-// });

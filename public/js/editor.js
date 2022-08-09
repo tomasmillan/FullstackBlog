@@ -1,19 +1,6 @@
 import { collection } from "./firebase.js";
-import { db, addDoc, doc, setDoc } from "./firebase.js";
+import { db, doc, setDoc } from "./firebase.js";
 
-const month = [
-  "Ene",
-  "Feb",
-  "Mar",
-  "Abr",
-  "May",
-  "Jun",
-  "Jul",
-  "Ago",
-  "Sep",
-  "Nov",
-  "Dic",
-];
 const blogTitleField = document.querySelector(".title");
 const articleField = document.querySelector(".article");
 
@@ -24,7 +11,6 @@ let bannerPath;
 
 const publishBtn = document.querySelector(".blog__btn__publish");
 const uploadInput = document.querySelector("#image__upload");
-
 bannerImage.addEventListener("change", () => {
   uploadImage(bannerImage, "banner");
 });
@@ -33,116 +19,85 @@ uploadInput.addEventListener("change", () => {
   uploadImage(uploadInput, "image");
 });
 
-const uploadImage = (uploadFile, uploadType) => {
+const uploadImage = async (uploadFile, uploadType) => {
   const [file] = uploadFile.files;
   if (file && file.type.includes("image")) {
-    const formData = new FormData();
-    formData.append("image", file);
-
-    fetch("127.0.0.1:3000/uploads", {
-      method: "POST",
-      body: formData,
+    const formdata = new FormData();
+    formdata.append("image", file);
+    console.log(file);
+    console.log(formdata);
+    await fetch("/upload", {
+      method: "post",
+      body: formdata,
     })
       .then((res) => res.json())
       .then((data) => {
-        if (uploadType == "image") {
-          addImage(data, file.name);
-        } else {
-          bannerPath = `${location.origin}/${data}`;
-          banner.style.backgroundImage = `url("${bannerPath}")`;
-        }
+        console.log(formdata);
+        console.log(data);
+        addImage(data, file.name);
+        bannerPath = `${location.origin}/${data}`;
+        console.log(bannerPath);
+        banner.style.backgroundImage = `url("${bannerPath}.jpg")`;
       });
   } else {
     swal("Por favor subir imagen");
   }
 };
 
-const addImage = (imagePath, alt) => {
+const addImage = (imagepath, alt) => {
   let curPos = articleField.selectionStart;
-  let textToInsert = `\r! [${alt}](${imagePath})\r`;
+  let textToInsert = `\r![${alt}](${imagepath})\r`;
   articleField.value =
     articleField.value.slice(0, curPos) +
     textToInsert +
     articleField.value.slice(curPos);
 };
 
-publishBtn.addEventListener("click", async () => {
-  let letters = "abcdefghijklmnñopqrstuvwxyz";
-  let blogTitle = blogTitleField.value.split(" ").join("-");
-  let id = "";
+let months = [
+  "Jan",
+  "Feb",
+  "Mar",
+  "Apr",
+  "May",
+  "Jun",
+  "Jul",
+  "Aug",
+  "Sep",
+  "Oct",
+  "Nov",
+  "Dec",
+];
 
-  for (let i = 0; i < 4; i++) {
-    id += letters[Math.floor(Math.random() * letters.length)];
+publishBtn.addEventListener("click", () => {
+  if (articleField.value.length && blogTitleField.value.length) {
+    // generating id
+    let letters = "abcdefghijklmnopqrstuvwxyz";
+    let blogTitle = blogTitleField.value.split(" ").join("-");
+    let id = "";
+    for (let i = 0; i < 4; i++) {
+      id += letters[Math.floor(Math.random() * letters.length)];
+    }
 
+    // setting up docName
     let docName = `${blogTitle}-${id}`;
-    let date = new Date();
-    console.log("post");
+    let date = new Date(); // for published at info
 
-    await setDoc(doc(db, "blogs", docName), {
-      title: blogTitleField.value,
-      article: articleField.value,
-      bannerImage: bannerPath,
-      publishedAt: `${date.getDate()} ${
-        month[date.getMonth()]
-      } ${date.getFullYear()}`,
-    })
+    //access firstore with db variable;
+    db.collection("blogs")
+      .doc(docName)
+      .set({
+        title: blogTitleField.value,
+        article: articleField.value,
+        bannerImage: bannerPath,
+        publishedAt: `${date.getDate()} ${
+          months[date.getMonth()]
+        } ${date.getFullYear()}`,
+      })
       .then(() => {
-        console.log("data entered");
-        location.href = `${docName}`;
+        location.href = `/${docName}`;
       })
       .catch((err) => {
-        console.log(err);
+        console.error(err);
       });
   }
 });
-/* const postCollectionRef = collection(db, "blogs");
-const createPost = async () => {
-  await addDoc(postCollectionRef, {
-    title: blogTitleField.value,
-    article: articleField.value,
-    bannerImage: bannerPath,
-    publishedAt: `${date.getDate()} ${
-      month[date.getMonth()]
-    } ${date.getFullYeAR()}`,
-  })
-    .then(() => {
-      console.log("data entered");
-      location.href = `${docName}`;
-    })
-    .catch((err) => {
-      console.log(err);
-    });
-}; */
-/* publishBtn.addEventListener("click", async () => {
-  /*  //generating id
-  let letters = "abcdefghijklmnñopqrstuvwxyz";
-  let blogTitle = blogTitleField.value.split(" ").join("-");
-  let id = "";
-  for (let i = 0; i < 4; i++) {
-    id += letters[Math.floor(Math.random() * letters.length)];
-
-    //docname
-    let docName = `${blogTitle}-${id}`;
-    let date = new Date();
-    console.log(docName);
- 
-  //Databse Connection
-  //await setDoc(doc(db, "cities", "new-city-id"), data);
-  //db.collection("cities").doc("new-city-id").set(data);
-  await addDoc(postCollectionRef, {
-    title: blogTitleField.value,
-    article: articleField.value,
-    bannerImage: bannerPath,
-    publishedAt: `${date.getDate()} ${
-      month[date.getMonth()]
-    } ${date.getFullYeAR()}`,
-  })
-    .then(() => {
-      console.log("data entered");
-      location.href = `${docName}`;
-    })
-    .catch((err) => {
-      console.log(err);
-    });
-});
- */

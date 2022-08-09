@@ -6,26 +6,39 @@ const input = document.getElementById("searchBar");
 const btns = document.querySelectorAll(".filter__btn");
 /* New Array   */
 let items = [];
+// json bin route
+const root = "https://api.jsonbin.io/v3";
+const route = "/b/62ed9b89e13e6063dc6d66fc";
+const header = {
+  headers: {
+    "Content-Type": "application/json",
+    "X-Master-Key":
+      "$2b$10$H4hr/2HpE/fP2mm2emvcnuhDdK/NoPoD4s1fDOcXRYlbcUzFu2tLa",
+  },
+};
 
+const apiFetchUrl = root + route;
+console.log(apiFetchUrl);
 async function loadContent() {
-  const response = await fetch(
-    "https://api.jsonbin.io/v3/b/62ed9b89e13e6063dc6d66fc"
-  );
-  const data = await response.json();
-  return data;
+  const response = await fetch(apiFetchUrl, header);
+  const { record } = await response.json();
+  const { products } = record;
+  return products;
 }
 
 window.addEventListener("DOMContentLoaded", async () => {
   boxContainer.innerHTML =
     '<li class="loader"><span class="mif-spinner3 ani-pulse"></span> loading</li>';
   catalogTitle.innerText = "categorias";
-  const data = await loadContent();
-  items = data.data;
-  generateCards(items);
+  const products = await loadContent();
+  items = products;
+  generateCards(products);
 });
 document.addEventListener("DOMContentLoaded", applyFilterCards);
 Array.from(btns).forEach((element) => {
-  element.addEventListener("click", applyFilterCards);
+  element.addEventListener("click", (event) => {
+    applyFilterCards(event);
+  });
 });
 
 function applyFilterCards(event) {
@@ -56,7 +69,7 @@ function createCard(items) {
         <img src="${items.image}" class="card__img">   
       </div>
       <div class="card-content d-flex flex-justify-center flex-align-center">
-        <h4 class="card-title text-bold text-cap">${items.title}</h4>
+        <h4 class="card-title text-bold text-cap">${items.name}</h4>
       </div>
       <div class="card-footer d-flex flex-justify-center flex-align-center">
         <p class="text-cap text-medium text-center">${items.description}</p>
