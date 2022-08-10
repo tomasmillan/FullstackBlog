@@ -19,7 +19,6 @@ const createBlog = (id, blog) => {
 const querySnapshot = await getDocs(collection(db, "blogs"));
 querySnapshot.forEach(async (doc) => {
   // doc.data() is never undefined for query doc snapshots
-  console.log(doc.id, " => ", doc.data());
   createBlog(doc.id, await doc.data());
 });
 

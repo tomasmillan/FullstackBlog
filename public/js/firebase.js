@@ -19,4 +19,13 @@ const app = initializeApp({
   appId: "1:1054406605191:web:a9913587251309a6c5bb22",
 });
 const db = getFirestore(app);
+
+export const saveData = (title, article, bannerImage, publishedAt) =>
+  addDoc(collection(db, "blogs"), {
+    title: title,
+    article: article,
+    bannerImage: bannerImage,
+    publishedAt: publishedAt,
+  });
+
 export { db, collection, getDocs, addDoc, setDoc, doc, query };

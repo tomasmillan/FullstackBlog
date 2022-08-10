@@ -1,10 +1,7 @@
 import { collection, getDocs, db, doc } from "./firebase.js";
-console.log("Estoy en blogView.js");
 let blogId = decodeURI(location.pathname.split("/").pop());
 const querySnapshot = await getDocs(collection(db, "blogs"));
 let docRef = querySnapshot;
-console.log(docRef);
-console.log(blogId);
 //new array
 let info = [];
 
@@ -40,7 +37,6 @@ const createBlog = (id, blog) => {
 
 // const addArticle = (ele, data) => {
 // data = data.split("\n").filter((item) => item.length);
-// console.log(data);
 // data.forEach((item) => {
 //   // check for heading
 //   if (item[0] == "#") {

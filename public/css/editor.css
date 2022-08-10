@@ -93,3 +93,7 @@ textarea::-webkit-scrollbar-thumb{
     background: #444;
     color: #fff;
 }
+.banner__post{
+    width: 100%;
+    height: 400px;
+}

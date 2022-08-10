@@ -17,7 +17,6 @@ app.get("/editor", express.static("uploads"), (req, res) => {
 });
 
 // upload link
-
 app.post("/upload", (req, res) => {
   let file = req.files.image;
   let date = new Date();
@@ -27,8 +26,14 @@ app.post("/upload", (req, res) => {
   let path = "public/uploads/" + imagename;
 
   // create upload
-  file.mv(path);
-  res.json(path);
+  file.mv(path, (err, result) => {
+    if (err) {
+      throw err;
+    } else {
+      // our image upload path
+      res.json(`uploads/${imagename}`);
+    }
+  });
 });
 
 app.get("/blogs", (req, res) => {
