@@ -9,7 +9,7 @@ const createBlog = (id, blog) => {
         <img src="${blog.bannerImage}" class="blog__img" alt="">
         <h1 class="blog__title">${String(blog.title).substring(0, 100)}</h1>
         <p class="blog__overview">${
-          String(blog.article).substring(0, 200) + "..."
+          String(blog.article).substring(0, 40) + "..."
         }</p>
         <a href="/${id}" class="btn btn__blog">read</a>
     </div>
