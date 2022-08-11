@@ -36,7 +36,7 @@ const uploadImage = async (uploadFile, uploadType) => {
         }
       });
   } else {
-    swal("Por favor subir imagen");
+    swal("Formato Incorrecto!", "Por favor subir imagen");
   }
 };
 
@@ -85,6 +85,6 @@ publishBtn.addEventListener("click", (e) => {
     bannerPath,
     publishedAtGenerator
   );
-  swal("Generaste el blog.");
+  swal("Felicitaciones!", "Generaste el post, para verlo anda a blogs");
   // location.href = `/${docName}`;
 });

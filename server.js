@@ -40,16 +40,16 @@ app.get("/blogs", (req, res) => {
   res.sendFile(path.join(initial_path, "blog.html"));
 });
 
-app.get("/:id", (req, res) => {
-  res.sendFile(path.join(initial_path, "blogView.html"));
-});
-
 app.get("/contact", (req, res) => {
   res.sendFile(path.join(initial_path, "contact.html"));
 });
 
 app.get("/catalog", (req, res) => {
   res.sendFile(path.join(initial_path, "catalog.html"));
+});
+
+app.get("/:id", (req, res) => {
+  res.sendFile(path.join(initial_path, "blogView.html"));
 });
 
 app.listen("3000", () => {
