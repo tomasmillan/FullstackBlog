@@ -20,7 +20,7 @@ const app = initializeApp({
 });
 const db = getFirestore(app);
 
-export const saveData = (title, article, bannerImage, publishedAt) =>
+export const saveData = (docName, title, article, bannerImage, publishedAt) =>
   addDoc(collection(db, "blogs"), {
     title: title,
     article: article,

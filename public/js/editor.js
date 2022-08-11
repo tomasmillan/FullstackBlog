@@ -78,5 +78,13 @@ publishBtn.addEventListener("click", (e) => {
   let date = new Date();
   let publishedAtGenerator = `
   ${date.getDate()} ${months[date.getMonth()]} ${date.getFullYear()}`;
-  saveData(blogTitle, articleContent, bannerPath, publishedAtGenerator);
+  saveData(
+    docName,
+    blogTitle,
+    articleContent,
+    bannerPath,
+    publishedAtGenerator
+  );
+  swal("Generaste el blog.");
+  // location.href = `/${docName}`;
 });

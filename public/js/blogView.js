@@ -4,7 +4,6 @@ const querySnapshot = await getDocs(collection(db, "blogs"));
 let docRef = querySnapshot;
 //new array
 let info = [];
-
 const setupBlog = (info) => {
   //HTML Connection
   const banner = document.querySelector(".banner__post");
@@ -16,13 +15,58 @@ const setupBlog = (info) => {
   banner.innerHTML = imgElement;
   titleTag.innerHTML += info.title;
   publish.innerHTML += info.publishedAt;
-  article.innerHTML += info.article;
+  let data = info.article;
+  let array = [];
+  const addArticle = (ele, data) => {
+    data = data.split("\n").filter((data) => data.length);
+    array.push(data);
+    data.forEach((array) => {
+      // check for heading
+      if (array[0] == "#") {
+        let hCount = 0;
+        let i = 0;
+        while (array[i] == "#") {
+          hCount++;
+          i++;
+        }
+        let tag = `h${hCount}`;
+        ele.innerHTML += `<${tag}>${array.slice(
+          hCount,
+          array.length
+        )}</${tag}>`;
+      }
+
+      //checking for image format
+      else if (array[0] == "!" && array[1] == "[") {
+        let seperator;
+
+        for (let i = 0; i <= array.length; i++) {
+          if (
+            array[i] == "]" &&
+            array[i + 1] == "(" &&
+            array[array.length - 1] == ")"
+          ) {
+            seperator = i;
+          }
+        }
+
+        let alt = array.slice(2, seperator);
+        let src = array.slice(seperator + 2, array.length - 1);
+        ele.innerHTML += `
+        <img src="${src}" alt="${alt}" class="article-image">
+        `;
+      } else {
+        ele.innerHTML += `<p>${array}</p>`;
+      }
+    });
+  };
+  addArticle(article, info.article);
 };
 
 const createBlog = (id, blog) => {
   const { title, article, bannerImage } = blog;
 
-  const blogSection = document.querySelector(".readmore");
+  const blogSection = document.querySelector(".cards__container");
   blogSection.innerHTML += `
     <div class="blog__card">
         <img src="${blog.bannerImage}" class="blog__img" alt="">
@@ -34,43 +78,6 @@ const createBlog = (id, blog) => {
     </div>
     `;
 };
-
-// const addArticle = (ele, data) => {
-// data = data.split("\n").filter((item) => item.length);
-// data.forEach((item) => {
-//   // check for heading
-//   if (item[0] == "#") {
-//     let hCount = 0;
-//     let i = 0;
-//     while (item[i] == "#") {
-//       hCount++;
-//       i++;
-//     }
-//     let tag = `h${hCount}`;
-//     ele.innerHTML += `<${tag}>${item.slice(hCount, item.length)}</${tag}>`;
-//   }
-//   //checking for image format
-//   else if (item[0] == "!" && item[1] == "[") {
-//     let seperator;
-//     for (let i = 0; i <= item.length; i++) {
-//       if (
-//         item[i] == "]" &&
-//         item[i + 1] == "(" &&
-//         item[item.length - 1] == ")"
-//       ) {
-//         seperator = i;
-//       }
-//     }
-//     let alt = item.slice(2, seperator);
-//     let src = item.slice(seperator + 2, item.length - 1);
-//     ele.innerHTML += `
-//           <img src="${src}" alt="${alt}" class="article-image">
-//           `;
-//   } else {
-//     ele.innerHTML += `<p>${item}</p>`;
-//   }
-// });
-// };
 querySnapshot.forEach(async (doc) => {
   if (doc.id === blogId) {
     setupBlog(await doc.data());
