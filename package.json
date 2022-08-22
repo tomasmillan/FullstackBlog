@@ -1,0 +1,19 @@
+{
+  "name": "fullstack-blog-main",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "web": "npm start"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@firebase/app": "^0.7.30",
+    "@firebase/firestore": "^3.4.14",
+    "express-fileupload": "^1.4.0",
+    "express.js": "^1.0.0",
+    "firebase": "^9.9.2"
+  }
+}
