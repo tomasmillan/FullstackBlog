@@ -52,6 +52,4 @@ app.get("/:id", (req, res) => {
   res.sendFile(path.join(initial_path, "blogView.html"));
 });
 
-app.listen("3000", () => {
-  console.log("listening......");
-});
+app.listen(process.env.PORT || 3000, () => console.log("Server is running..."));
