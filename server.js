@@ -5,7 +5,12 @@ const fileupload = require("express-fileupload");
 let initial_path = path.join(__dirname, "public");
 
 const app = express();
-app.use(express.static(initial_path));
+const compression = require("compression");
+const helmet = require("helmet");
+
+app.use(helmet());
+app.use(compression()); //use compression
+app.use(express.static(path.join(__dirname, "public")));
 app.use(fileupload());
 
 app.get("/", (req, res) => {

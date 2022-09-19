@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="TML Dev">
     <meta name="keywords" content="palabras Claves">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *;**script-src 'self' http://onlineerp.solution.quebec 'unsafe-inline' 'unsafe-eval';">
     <meta name="description" content="Pagina web de Marcelo Taxidermia">
-    <title>Blog: Titulo de la pagina</title>
+    <title>Marcelo Lia Taxidermia</title>
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,100;1,300&display=swap" rel="stylesheet">
     <!-- Fontawesome Icons -->
@@ -28,7 +29,7 @@
     <!-- NAVBAR -->
     <nav class="navbar">
         <div class="logo">
-            <h2 class="title">logo</h2>
+            <a href="/" class="titleLogo">Marcelo Taxidermia</a>
         </div>
         <div class="menu">
             <ul class="menu__links">
@@ -46,11 +47,8 @@
         </div>
     </nav>
     <!-- Hero -->
-    <header class="header">
+    <header class="headerHome">
         <div class="content">
-            <h1 class="heading">
-                <span class="small">Bienvenidos</span><span class="no__fill"> a mi pagina</span>
-            </h1>
             <button class="btn btn__hero">Descubrir mas</button>
         </div>
     </header>
@@ -58,11 +56,11 @@
     <section class="contact">
         <div class="contact__main">
             <h4 class="contact__title title">Sobre mi</h4>
-            <p class="contact__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero ab quisquam doloremque modi reiciendis? Assumenda, explicabo alias! Expedita, cupiditate quis!</p>
+            <p class="contact__text">Mi nombre es Marcelo Lía y soy un apasionado de esta hermosa profesión que es la taxidermia en la que se conjugan tres pasiones: los animales, la naturaleza y el arte. Cuento con una trayectoria de 24 años en esta profesión. Quisiera agradecer a mi maestro Angel Del Nero con el que realice mis primeros cursos, a Daniel Aguilar por sus consejos con la humildad y generosidaddelos grandes, a mi familia por alentarme y bancarme siempre, y a mis clientes por confiar en mi al dejarme sus trofeos para que realice el trabajo.</p>
             <a href="contact" class="btn contact__btn">Contactate</a>
         </div>
         <div class="contact__aside">
-            <img src="img/8.jpg" alt="" class="contact__img">
+            <img src="img/Marcelo.jpeg" alt="" class="contact__img">
         </div>
     </section>
 
@@ -70,24 +68,43 @@
         <div class="animals__container">
             <!-- 5 animales de prueba -->
             <div class="chips__container">
-            <label for="afrika">Afrika</label>
-            <button class="chips"><img src="img/7.jpg" alt="" class="animal__img" id="afrika"></button>
+                <a href="catalog">
+                    <label for="afrika">Afrika</label>
+                    <button class="chips">
+                        <img src="img/7.jpg" alt="" class="animal__img" id="afrika">
+                    </button>
+                </a>
             </div>
             <div class="chips__container">
-            <label for="america">America</label>
-            <button class="chips"><img src="img/6.jpg" alt="" class="animal__img" id="america"></button>
+                <a href="catalog">
+                    <label for="america">America</label>
+                    <button class="chips">
+                        <img src="img/6.jpg" alt="" class="animal__img" id="america">
+                    </button>
+                </a>
             </div>
             <div class="chips__container">
-            <label for="asia">Asia</label>
-            <button class="chips"><img src="img/8.jpg" alt="" class="animal__img" id="asia"></button>
+                <a href="catalog">
+                    <label for="asia">Asia</label>
+                    <button class="chips">
+                        <img src="img/8.jpg" alt="" class="animal__img" id="asia">
+                    </button>
+                </a>
             </div>
             <div class="chips__container">
-            <label for="europa">Europa</label>
-            <button class="chips"><img src="img/5.jpg" alt="" class="animal__img" id="europa"></button>
+                <a href="catalog">
+                    <label for="europa">Europa</label>
+                    <button class="chips"><img src="img/5.jpg" alt="" class="animal__img" id="europa">
+                    </button>
+                </a>
             </div>
             <div class="chips__container">
-            <label for="oceania">Oceania</label>
-            <button class="chips"><img src="img/4.jpg" alt="" class="animal__img" id="oceania"></button>
+                <a href="catalog">
+                    <label for="oceania">Oceania</label>
+                    <button class="chips">
+                        <img src="img/4.jpg" alt="" class="animal__img" id="oceania">
+                    </button>
+                </a>
             </div>
         </div>
     </section>
@@ -95,8 +112,8 @@
     <section class="blog__section"></section>
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="col-2">
+        <div class="ftContainer">
+            <div class="ftCol-2">
                 <h2 class="ft-links">
                     Useful links
                     <ul class="menu__links">
@@ -107,16 +124,16 @@
                     </ul>
                 </h2>
             </div>
-            <div class="col-1">
+            <div class="ftCol-1">
                 <input type="email" name="" id="submit" placeholder="mail@gmail.com">
                 <button>submit</button>
             </div>
-            <div class="col-2 col-e">
+            <!-- <div class="ftCol-2 ftCol-e">
                 <h3>FAQ</h3>
                 <h3>Policies</h3>
                 <h3>Information</h3>
                 <h3>Data</h3>
-            </div>
+            </div> -->
     </div>
     <div class="credits">
         <h6 class="author">TML ~ Creative Development ~ 2022</h6>

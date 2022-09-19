@@ -12,9 +12,11 @@
   "dependencies": {
     "@firebase/app": "^0.7.30",
     "@firebase/firestore": "^3.4.14",
+    "compression": "^1.7.4",
     "express-fileupload": "^1.4.0",
     "express.js": "^1.0.0",
     "firebase": "^9.9.2",
+    "helmet": "^6.0.0",
     "netlify-lambda": "^2.0.15",
     "serverless-http": "^3.0.2"
   }

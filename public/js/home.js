@@ -27,3 +27,7 @@ querySnapshot.forEach(async (doc) => {
   console.log(doc.id, " => ", doc.data());
   createBlog(doc.id, await doc.data());
 });
+
+function goTo() {
+  alert("no");
+}
