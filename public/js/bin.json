@@ -3,178 +3,226 @@
         {
             "id":0,
             "place": "africa",
-            "image": "https://i.pinimg.com/736x/d3/74/22/d374220373d5d86395110813e078200a.jpg",
-            "name": "Antilope de las Indias",
-            "description": "El antílope indio, antílope negro, sasín o cervicabra (Antilope cervicapra) es una especie de mamífero artiodáctilo de la familia Bovidae que se encuentra en la India, este de Pakistán y Nepal. Es la única especie de su género."
+            "image": "https://marceloliataxidermy.com/img/antilopeDeLaIndia.jpeg",
+            "name": "Antilope de las Indias"
         },
         {
             "id":1,
             "place": "africa",
-            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5uqwBEws3qiX2sRJpbjrJtkZFkONwdr2OeTWN6xqdl6omBugBrhDbVBsZjZLuanUr3hE&usqp=CAU",
-            "name": "Blesbok",
-            "description": "Es un antílope africano que se caracteriza al ser uno de los pocos, si no el único animal en presentar una coloración púrpura natural. Presenta, además, unas distintivas manchas blancas en su rostro."
+            "image": "https://marceloliataxidermy.com/img/blesbokAfrica.jpeg",
+            "name": "Blesbok"
         },
         {
             "id":2,
             "place": "africa",
-            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsALkKJF3xsEvG1MG0FI3JJFD8mhdjdbsZ8w&usqp=CAU",
-            "name": "Bufalo Cafre",
-            "description": "Syncerus caffer es una especie de mamífero artiodáctilo de la familia Bovidae que habita en los bosques y sabanas del África subsahariana, especialmente al este del continente. A veces también se lo llama búfalo africano, ya que fue en esa región de Sudáfrica donde se descubrieron los primeros ejemplares."
+            "image": "https://marceloliataxidermy.com/img/bufaloCafreAfrica.jpeg",
+            "name": "Bufalo Cafre"
         },
         {
             "id":3,
             "place": "africa",
-            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIzuoYBRxYioy9OcuQqSUvfxHLdI7fnNOMjYYfbAAP9UlVPEgiVnJhcqVxuOnGnLXCyWQ&usqp=CAU",
-            "name": "Chacal",
-            "description": "Un chacal es un miembro de cualquiera de las tres especies de mediano tamaño de depredadores del género Canis, que habitan en África, Asia y el sudeste de Europa."
+            "image": "https://marceloliataxidermy.com/img/chacalAfrica.jpeg",
+            "name": "Chacal"
         },
         {
             "id":4,
             "place": "asia",
-            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIzuoYBRxYioy9OcuQqSUvfxHLdI7fnNOMjYYfbAAP9UlVPEgiVnJhcqVxuOnGnLXCyWQ&usqp=CAU",
-            "name": "Ciervo Axis",
-            "description": "El axis, chital o ciervo moteado es una especie de mamífero artiodáctilo de la familia Cervidae.​ Es propia de Asia."
-        },
-        {
-            "id":5,
-            "place": "oceania",
-            "image": "https://898904.smushcdn.com/2130394/wp-content/uploads/2018/05/animales-que-solo-veras-en-australia-3.jpg?lossy=1&strip=1&webp=1",
-            "name": "Wombat",
-            "description": "Es un marsupial súper gracioso que puede llegar a pesar 35 kg. Parecen osos gorditos con patitas cortas."
+            "image": "https://marceloliataxidermy.com/img/ciervoAxis.jpeg",
+            "name": "Ciervo Axis"
         },
         {
             "id":6,
             "place": "europa",
-            "image": "El gamo común o europeo es una especie de cérvido nativa de la región mediterránea. Se diferencia del otro gran cérvido europeo",
-            "name": "Ciervo Dama",
-            "description": "El gamo común o europeo es una especie de cérvido nativa de la región mediterránea. Se diferencia del otro gran cérvido europeo"
+            "image": "https://marceloliataxidermy.com/img/ciervoDama.jpeg",
+            "name": "Ciervo Dama"
         },
         {
             "id":7,
             "place": "europa",
-            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSytItagfaEY90TCx5WOXZIXMjsGw8OY7NyT4ytc2WkJNLLSJOFR7rhwGlrrMLzAzOHLso&usqp=CAU",
-            "name": "Corzo Europeo",
-            "description": "El corzo es una especie de mamífero artiodáctilo de la familia Cervidae. Es el cérvido más pequeño de Eurasia"
+            "image": "https://marceloliataxidermy.com/img/corzoEuropeo.jpeg",
+            "name": "Corzo Europeo"
         },
         {
             "id":8,
             "place": "africa",
-            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyhU4Cpc-D6koB3CP8_3ZX3wc4QOnCvUF_hHOUxmkslotCj0P9F3GxtT-hak_H6-oTSEY&usqp=CAU",
-            "name": "Facocero",
-            "description": "El facóquero común o facocero común es una especie de mamífero artiodáctilo de la familia Suidae, una de las dos especies de Phacochoerus que existen."
+            "image": "https://marceloliataxidermy.com/img/facoceroAfrica.jpeg",
+            "name": "Facocero"
         },
         {
             "id":9,
             "place": "africa",
-            "image": "data:image/jpeg;base64,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",
             "name": "Gran Kudu",
-            "description": "El kudú mayor o gran kudú es una especie de mamífero artiodáctilo de la subfamilia Bovinae. Es un antílope africano de gran tamaño y notable cornamenta."
+            "image": "https://marceloliataxidermy.com/img/granKuduAfrica.jpeg"
         },
         {
             "id":10,
             "place": "asia",
-            "image": "https://images.pexels.com/photos/2305706/pexels-photo-2305706.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-            "name": "Panda Rojo",
-            "description": "El panda rojo o panda menor es una especie de mamífero omnívoro de la familia Ailuridae."
-        },
-        {
-            "id":11,
-            "place": "asia",
-            "image":"https://images.pexels.com/photos/7209368/pexels-photo-7209368.jpeg?auto=compress&cs=tinysrgb&w=600",
-            "name": "Rinoceronte Indio",
-            "description": "El rinoceronte indio es una especie de mamífero perisodáctilo de la familia Rhinocerotidae, una de las tres especies de rinoceronte que existen actualmente en Asia."
+            "image":"https://marceloliataxidermy.com/img/impalaAfrica.jpeg",
+            "name": "Impala"
         },
         {
             "id": 12,
-            "place": "asia",
-            "image": "https://images.pexels.com/photos/2411914/pexels-photo-2411914.jpeg?auto=compress&cs=tinysrgb&w=600",
-            "name": "Organgutan",
-            "description": "Los orangutanes son un género de primates homínidos que comprende tres especies de grandes simios originarios de Indonesia y Malasia."
+            "place": "africa",
+            "image": "https://marceloliataxidermy.com/img/klispringerAfrica.jpeg",
+            "name": "klipspringer"
         },
         {
             "id": 13,
-            "place": "asia",
-            "image": "https://images.pexels.com/photos/51952/cow-bull-horns-coat-51952.jpeg?auto=compress&cs=tinysrgb&w=600",
-            "name": "Yak",
-            "description": "Son mamíferos bóvidos de tamaño mediano y pelaje lanoso, nativo de las montañas de Asia Central y el Himalaya, vive en las altiplanicies esteparias y fríos desiertos del Nepal, Tíbet, Pamir y Karakórum, entre los 4000 y 6000 metros de altitud."
+            "place": "africa",
+            "image": "https://marceloliataxidermy.com/img/lechweAfrica.jpeg",
+            "name": "Lechwe"
         },
         {
             "id": 14,
-            "place": "asia",
-            "image": "https://images.pexels.com/photos/7274845/pexels-photo-7274845.jpeg?auto=compress&cs=tinysrgb&w=600",
-            "name": "Tigre de Bengala",
-            "description": "El tigre de Bengala, también conocido como tigre de Bengala real o tigre indio, es una subespecie de tigre que habita en la India, Nepal, Bangladés, Bután, Birmania y Tíbet."
+            "place": "peces",
+            "image": "https://marceloliataxidermy.com/img/moldesMedidaPecesInsumos.jpeg",
+            "name": "Moldes Peces"
         },
         {
             "id": 15,
-            "place": "europa",
-            "image": "https://images.pexels.com/photos/12194905/pexels-photo-12194905.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-            "name": "Cabra de Monte",
-            "description": "La cabra montés o íbice ibérico ​ es una de las especies de bóvidos del género Capra que existen en Europa."
+            "place": "africa",
+            "image": "https://marceloliataxidermy.com/img/nyalaAfrica.jpeg",
+            "name": "Nyala"
         },
         {
             "id": 16,
-            "place": "europa",
-            "image": "https://images.pexels.com/photos/3964413/pexels-photo-3964413.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-            "name": "Ardilla Roja",
-            "description": "La ardilla roja, o simplemente ardilla común, es una especie de roedor esciuromorfo de la familia Sciuridae. Es una de las ardillas más extendidas por los bosques de Europa."
+            "place": "africa",
+            "image": "https://marceloliataxidermy.com/img/oryxPedestal.jpeg9.jpeg",
+            "name": "Oryx Pedestal"
         },
         {
             "id": 17,
-            "place": "europa",
-            "image":"https://images.pexels.com/photos/1068554/pexels-photo-1068554.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-            "name": "Oso Pardo",
-            "description": "El oso pardo europeo es una subespecie del oso pardo propia de Europa, desde la península ibérica hasta Escandinavia y Rusia."
+            "place": "peces",
+            "image":"https://marceloliataxidermy.com/img/pejerrey.jpeg",
+            "name": "Pejerrey"
         },
         {
             "id": 18,
-            "place": "europa",
-            "image":"https://images.pexels.com/photos/6474759/pexels-photo-6474759.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-            "name": "Buitre Leonado",
-            "description": "El buitre leonado​, del griego, γύψ, gýps y el latín fulvus. Es una especie de ave accipitriforme de la familia Accipitridae, ​ y uno de los pocos buitres que se pueden encontrar en Europa."
+            "place": "america",
+            "image":"https://marceloliataxidermy.com/img/puma.jpeg",
+            "name": "Puma"
         },
         {
             "id": 19,
-            "place": "europa",
-            "image": "https://images.pexels.com/photos/6613569/pexels-photo-6613569.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-            "name": "Reno",
-            "description": "El reno común del norte de Europa alcanza una altura en la cruz de 110 cm y un peso de 150 kg."
+            "place": "africa",
+            "image": "https://marceloliataxidermy.com/img/redHartebeestAfrika.jpeg",
+            "name": "Red Hartebeest"
         },
         {
             "id": 20,
-            "place": "africa",
-            "image": "https://images.pexels.com/photos/70080/elephant-africa-african-elephant-kenya-70080.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-            "name": "Elefante Gris",
-            "description": "Los elefantes son los animales terrestres más grandes que existen en la actualidad.2​ El periodo de gestación es de veintidós meses, el más largo en cualquier animal terrestre."
+            "place": "insumos",
+            "image": "https://marceloliataxidermy.com/img/tablaColmillosFacocero.jpeg",
+            "name": "Colmillos Facocero"
         },
         {
             "id": 21,
-            "place": "africa",
-            "name": "Cebra de la Sabana",
-            "image":"https://images.pexels.com/photos/247376/pexels-photo-247376.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-            "description": "La cebra de sabana, es el tipo más común y extendido de cebra. Es propia de las llanuras y sabanas desde el sur de Etiopía a lo largo del África oriental, y tan al sur como Angola y la parte oriental de Sudáfrica."
+            "place": "peces",
+            "name": "Tararira",
+            "image":"https://marceloliataxidermy.com/img/tarariraA.jpeg"
         },
         {
             "id": 22,
-            "place": "africa",
-            "image":"https://images.pexels.com/photos/3857080/pexels-photo-3857080.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-            "name": "Antilope",
-            "description": "Los antílopes son mamíferos ungulados de la familia de los bóvidos, Una característica de esta familia es que solo los machos poseen cuernos, aunque en algunas especies"
+            "place": "peces",
+            "name": "Dorado",
+            "image":"https://marceloliataxidermy.com/img/dorado.jpeg"
         },
         {
             "id": 23,
-            "place": "africa",
-            "image": "https://images.pexels.com/photos/3889695/pexels-photo-3889695.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-            "name": "Pinguino de Anteojos",
-            "description": "El pingüino de El Cabo, ​ también conocido como pingüino africano o de anteojos, es la única especie de pingüino que vive en el continente africano y una de las cuatro del género Spheniscus."
+            "place": "replica",
+            "name": "Colmillo Elefante",
+            "image":"https://marceloliataxidermy.com/img/colmilloElefante.jpg"
         },
         {
             "id": 24,
-            "place": "africa",
-            "image": "https://images.pexels.com/photos/3061500/pexels-photo-3061500.jpeg?auto=compress&cs=tinysrgb&w=600",
-            "name": "Camelus",
-            "description": "Camelus es un género de mamíferos artiodáctilos de la familia Camelidae que incluye a las tres especies vivientes de la familia originarias del Viejo Mundo, que son denominadas popularmente como camellos y dromedarios."
+            "place": "replica",
+            "name": "Tiburón Bacota",
+            "image":"https://marceloliataxidermy.com/img/tiburonBacota.jpeg"
+        },
+        {
+            "id": 25,
+            "place": "replica",
+            "name": "Tiburón Cazón",
+            "image":"https://marceloliataxidermy.com/img/tiburonCazon.jpeg"
+        },
+        {
+            "id": 26,
+            "place": "replica",
+            "name": "Tiburón Escalandrun",
+            "image":"https://marceloliataxidermy.com/img/tiburonEscalandrun.jpeg"
+        },
+        {
+            "id": 27,
+            "place": "replica",
+            "name": "Marlin",
+            "image":"https://marceloliataxidermy.com/img/marlin.jpeg"
+        },
+        {
+            "id": 28,
+            "place": "expos",
+            "name": "Stand Expo Arma 2017",
+            "image":"https://marceloliataxidermy.com/img/stand2017.jpeg"
+        },
+        {
+            "id": 29,
+            "place": "peces",
+            "name": "Restauración Pejerrey",
+            "image":"https://marceloliataxidermy.com/img/resPejerrey.jpg"
         }
-        
+        ,
+        {
+            "id": 30,
+            "place": "adornos",
+            "name": "Adorno Africa",
+            "image":"https://marceloliataxidermy.com/img/especial.jpg"
+        }
+        ,
+        {
+            "id": 31,
+            "place": "adornos",
+            "name": "Picaporte Cuerno",
+            "image":"https://marceloliataxidermy.com/img/especial2.jpg"
+        }
+        ,
+        {
+            "id": 32,
+            "place": "adornos",
+            "name": "Banquito Forrado",
+            "image":"https://marceloliataxidermy.com/img/especial3.jpg"
+        }
+        ,
+        {
+            "id": 33,
+            "place": "adornos",
+            "name": "Adorno Caza",
+            "image":"https://marceloliataxidermy.com/img/especial4.jpg"
+        }
+        ,
+        {
+            "id": 34,
+            "place": "adornos",
+            "name": "Hacha",
+            "image":"https://marceloliataxidermy.com/img/especial5.jpg"
+        }
+        ,
+        {
+            "id": 35,
+            "place": "insumos",
+            "name": "Tablas para Craneos",
+            "image":"https://marceloliataxidermy.com/img/tablasCraneo.jpg"
+        }
+        ,
+        {
+            "id": 36,
+            "place": "adornos",
+            "name": "Molde Fanal",
+            "image":"https://marceloliataxidermy.com/img/fanal.jpeg"
+        }
+        ,
+        {
+            "id": 37,
+            "place": "insumos",
+            "name": "Ojo Embalsamado",
+            "image":"https://marceloliataxidermy.com/img/ojo.jpg"
+        }
     ]
 }

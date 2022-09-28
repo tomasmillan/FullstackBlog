@@ -63,15 +63,12 @@ function generateCards(items, filterPlace) {
 
 function createCard(items) {
   let card = `
-    <div class="social-box bg-lightGray fg-grayBlue d-flex flex-column border-radius-4 m-1 drop-shadow" style="width: 15rem;">
+    <div class="social-box bg-lightGray fg-grayBlue d-flex flex-column border-radius-4 m-1 drop-shadow" style="width: 18rem;">
       <div class="card-header d-flex flex-justify-center flex-align-center">
         <img src="${items.image}" class="card__img">   
       </div>
       <div class="card-content d-flex flex-justify-center flex-align-center">
         <h4 class="card-title text-bold text-cap">${items.name}</h4>
-      </div>
-      <div class="card-footer d-flex flex-justify-center flex-align-center">
-        <p class="text-cap text-medium text-center">${items.description}</p>
       </div>
     </div>
 `;
